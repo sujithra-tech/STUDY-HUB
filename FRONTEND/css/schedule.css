@@ -1,0 +1,257 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+
+background:
+radial-gradient(circle at top right,#d8ccff,transparent 40%),
+radial-gradient(circle at bottom left,#c7b6ff,transparent 40%),
+linear-gradient(135deg,#F7F5FF,#EEE9FF);
+
+}
+
+/* Layout */
+
+.layout{
+
+display:flex;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:230px;
+background:white;
+min-height:100vh;
+padding:25px;
+
+box-shadow:2px 0 15px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+color:#6A5CFF;
+margin-bottom:25px;
+
+}
+
+.menu{
+
+list-style:none;
+
+}
+
+.menu li{
+
+padding:10px;
+margin-bottom:8px;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.menu li:hover{
+
+background:#EEE9FF;
+
+}
+
+.active{
+
+background:#6A5CFF;
+color:white;
+
+}
+
+.submenu{
+
+margin-left:15px;
+list-style:none;
+
+}
+
+.submenu li{
+
+font-size:14px;
+
+}
+
+/* Main */
+
+.main{
+
+flex:1;
+padding:40px;
+
+}
+
+/* Back button */
+
+.back{
+
+margin-bottom:20px;
+color:#6A5CFF;
+cursor:pointer;
+
+}
+
+/* Sections */
+
+.section{
+
+background:white;
+
+padding:25px;
+
+border-radius:14px;
+
+margin-bottom:25px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+.section h2{
+
+color:#6A5CFF;
+
+margin-bottom:15px;
+
+}
+
+/* Task input */
+
+.task-input{
+
+display:flex;
+gap:10px;
+
+margin-bottom:15px;
+
+}
+
+.task-input input{
+
+flex:1;
+
+padding:10px;
+
+border-radius:8px;
+
+border:1px solid #ddd;
+
+}
+
+.task-input button{
+
+background:#6A5CFF;
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+/* Task list */
+
+.task-box ul{
+
+list-style:none;
+
+}
+
+.task-box li{
+
+padding:8px;
+
+border-bottom:1px solid #eee;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+/* Weekly grid */
+
+.week-grid{
+
+display:grid;
+
+grid-template-columns:repeat(7,1fr);
+
+gap:10px;
+
+}
+
+.day{
+
+background:#F6F3FF;
+
+padding:15px;
+
+border-radius:10px;
+
+text-align:center;
+
+}
+
+/* Monthly grid */
+
+.month-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+.week{
+
+background:#F6F3FF;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:center;
+
+}
+
+/* Year grid */
+
+.year-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+.quarter{
+
+background:#F6F3FF;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:center;
+
+}

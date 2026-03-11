@@ -1,0 +1,233 @@
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+
+background:
+radial-gradient(circle at top right,#d8ccff,transparent 40%),
+radial-gradient(circle at bottom left,#c7b6ff,transparent 40%),
+linear-gradient(135deg,#F7F5FF,#EEE9FF);
+
+min-height:100vh;
+
+}
+
+/* Layout */
+
+.layout{
+
+display:flex;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:220px;
+
+background:white;
+
+min-height:100vh;
+
+padding:25px;
+
+box-shadow:2px 0 15px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+color:#6A5CFF;
+
+margin-bottom:30px;
+
+}
+
+.menu{
+
+list-style:none;
+
+}
+
+.menu li{
+
+padding:12px;
+
+margin-bottom:10px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+color:#444;
+
+}
+
+.menu li:hover{
+
+background:#EEE9FF;
+
+}
+
+.active{
+
+background:#6A5CFF;
+
+color:white;
+
+}
+
+/* Main */
+
+.main{
+
+flex:1;
+
+padding:40px;
+
+}
+
+/* Header */
+
+.header{
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+.title{
+
+font-size:38px;
+
+color:#6A5CFF;
+
+}
+
+.subtitle{
+
+color:#555;
+
+margin-top:5px;
+
+}
+
+/* Grid cards */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+/* Card */
+
+.card{
+
+background:white;
+
+padding:20px;
+
+border-radius:14px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+.card h3{
+
+color:#6A5CFF;
+
+margin-bottom:10px;
+
+}
+
+#streak{
+
+font-size:26px;
+
+font-weight:600;
+
+}
+
+/* Button */
+
+#focusBtn{
+
+background:#6A5CFF;
+
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+#focusBtn:hover{
+
+background:#5747ff;
+
+}
+
+/* Input */
+
+input{
+
+width:100%;
+
+padding:10px;
+
+border-radius:8px;
+
+border:1px solid #ddd;
+
+}
+
+/* Overview */
+
+.overview{
+
+background:white;
+
+padding:20px;
+
+border-radius:14px;
+
+margin-top:25px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+/* Footer */
+
+.footer{
+
+text-align:center;
+
+margin-top:20px;
+
+font-weight:600;
+
+color:#6A5CFF;
+
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Study Hub - Schedule</title>
+
+<link rel="stylesheet" href="FRONTEND/css/schedule.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2 class="logo">STUDY HUB</h2>
+
+<ul class="menu">
+
+<li>🏠 Home</li>
+
+<li class="active">📅 Schedule</li>
+
+<ul class="submenu">
+
+<li>Today's Plan</li>
+<li>Weekly Plan</li>
+<li>Monthly Plan</li>
+<li>Yearly Plan</li>
+
+</ul>
+
+<li>⏱ Timer</li>
+<li>🤖 AI Tools</li>
+
+</ul>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<div class="back">⬅ Back</div>
+
+<!-- TODAY PLAN -->
+
+<section class="section">
+
+<h2>Today's Plan</h2>
+
+<div class="task-input">
+
+<input id="todayTask" type="text" placeholder="What do you need to do today?">
+
+<button onclick="addTodayTask()">Add</button>
+
+</div>
+
+<div class="task-box">
+
+<h3>Pending</h3>
+
+<ul id="todayList"></ul>
+
+</div>
+
+</section>
+
+
+<!-- WEEKLY PLAN -->
+
+<section class="section">
+
+<h2>Week's Plan</h2>
+
+<div class="task-input">
+
+<input id="weekTask" type="text" placeholder="Add task for this week">
+
+<button onclick="addWeekTask()">Add</button>
+
+</div>
+
+<div class="week-grid">
+
+<div class="day">Monday</div>
+<div class="day">Tuesday</div>
+<div class="day">Wednesday</div>
+<div class="day">Thursday</div>
+<div class="day">Friday</div>
+<div class="day">Saturday</div>
+<div class="day">Sunday</div>
+
+</div>
+
+</section>
+
+
+<!-- MONTHLY PLAN -->
+
+<section class="section">
+
+<h2>Month's Plan</h2>
+
+<div class="task-input">
+
+<input id="monthTask" type="text" placeholder="Add a monthly goal">
+
+<button onclick="addMonthTask()">Add</button>
+
+</div>
+
+<div class="month-grid">
+
+<div class="week">Week 1</div>
+<div class="week">Week 2</div>
+<div class="week">Week 3</div>
+<div class="week">Week 4</div>
+
+</div>
+
+</section>
+
+
+<!-- YEARLY PLAN -->
+
+<section class="section">
+
+<h2>Year's Plan</h2>
+
+<div class="task-input">
+
+<input id="yearTask" type="text" placeholder="Add yearly goal">
+
+<button onclick="addYearTask()">Add</button>
+
+</div>
+
+<div class="year-grid">
+
+<div class="quarter">Q1 (Jan-Mar)</div>
+<div class="quarter">Q2 (Apr-Jun)</div>
+<div class="quarter">Q3 (Jul-Sep)</div>
+<div class="quarter">Q4 (Oct-Dec)</div>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+<script src="FRONTEND/js/schedule.js"></script>
+
+</body>
+
+</html>
