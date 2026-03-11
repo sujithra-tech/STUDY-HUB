@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Dashboard</h2>
+
+<div class="card">
+
+<h3>Add Tutorial</h3>
+
+<input id="title" placeholder="Tutorial Name">
+
+<input id="link" placeholder="Tutorial URL">
+
+<button onclick="saveTutorial()">Save Tutorial</button>
+
+</div>
+
+<div class="card">
+
+<h3>Watch Tutorial</h3>
+
+<iframe id="videoFrame" width="100%" height="300"></iframe>
+
+</div>
+
+<div class="card">
+
+<h3>Notes</h3>
+
+<textarea id="notes" rows="10" placeholder="Write your notes here..."></textarea>
+
+<button onclick="saveNotes()">Save Notes</button>
+
+</div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
