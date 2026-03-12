@@ -1,0 +1,270 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+
+background:
+radial-gradient(circle at top right,#d8ccff,transparent 40%),
+radial-gradient(circle at bottom left,#c7b6ff,transparent 40%),
+linear-gradient(135deg,#F7F5FF,#EEE9FF);
+
+}
+
+/* Layout */
+
+.layout{
+
+display:flex;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:220px;
+background:white;
+min-height:100vh;
+padding:25px;
+
+box-shadow:2px 0 15px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+color:#6A5CFF;
+margin-bottom:30px;
+
+}
+
+.menu{
+
+list-style:none;
+
+}
+
+.menu li{
+
+padding:12px;
+margin-bottom:10px;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.menu li:hover{
+
+background:#EEE9FF;
+
+}
+
+.active{
+
+background:#6A5CFF;
+color:white;
+
+}
+
+/* Main */
+
+.main{
+
+flex:1;
+padding:40px;
+text-align:center;
+
+}
+
+.back{
+
+text-align:left;
+margin-bottom:20px;
+color:#6A5CFF;
+cursor:pointer;
+
+}
+
+.title{
+
+font-size:34px;
+color:#6A5CFF;
+
+}
+
+.subtitle{
+
+color:#555;
+margin-bottom:30px;
+
+}
+
+/* Timer circle */
+
+.timer-circle{
+
+width:250px;
+height:250px;
+
+border:6px solid #6A5CFF;
+
+border-radius:50%;
+
+margin:0 auto 25px;
+
+display:flex;
+flex-direction:column;
+
+align-items:center;
+justify-content:center;
+
+background:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+#time{
+
+font-size:42px;
+font-weight:700;
+
+}
+
+#status{
+
+color:#777;
+
+}
+
+/* Controls */
+
+.controls{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:20px;
+
+}
+
+.controls button{
+
+width:50px;
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:18px;
+
+background:#EEE9FF;
+
+}
+
+.start{
+
+background:#6A5CFF;
+color:white;
+
+}
+
+/* Custom */
+
+.custom{
+
+margin-bottom:20px;
+
+}
+
+.custom input{
+
+width:60px;
+
+padding:8px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+text-align:center;
+
+}
+
+.custom button{
+
+padding:8px 15px;
+
+background:#6A5CFF;
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+/* Quick buttons */
+
+.quick{
+
+display:flex;
+justify-content:center;
+
+gap:10px;
+
+margin-bottom:25px;
+
+}
+
+.quick button{
+
+background:white;
+
+border:1px solid #ddd;
+
+padding:8px 12px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.quick button:hover{
+
+background:#EEE9FF;
+
+}
+
+/* Tip */
+
+.tip{
+
+background:white;
+
+padding:15px;
+
+border-radius:10px;
+
+max-width:500px;
+
+margin:auto;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+color:#555;
+
+}

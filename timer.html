@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Study Hub - Focus Timer</title>
+
+<link rel="stylesheet" href="FRONTEND/css/timer.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2 class="logo">STUDY HUB</h2>
+
+<ul class="menu">
+
+<li>🏠 Home</li>
+<li>📊 Dashboard</li>
+<li>📅 Schedule</li>
+<li>🤖 AI Tools</li>
+<li>📚 Practice Here</li>
+<li class="active">⏱ Timer</li>
+
+</ul>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="back">⬅ Back</div>
+
+<h1 class="title">Focus Timer</h1>
+
+<p class="subtitle">Stay focused and track your study sessions</p>
+
+
+<!-- TIMER CIRCLE -->
+
+<div class="timer-circle">
+
+<span id="time">06:00</span>
+
+<p id="status">Ready</p>
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="controls">
+
+<button onclick="resetTimer()">⟲</button>
+
+<button class="start" onclick="startTimer()">▶</button>
+
+<button onclick="stopTimer()">⏸</button>
+
+</div>
+
+
+<!-- CUSTOM TIME -->
+
+<div class="custom">
+
+<input id="minutesInput" type="number" value="6">
+
+<span>minutes</span>
+
+<button onclick="setTime()">Set</button>
+
+</div>
+
+
+<!-- QUICK TIMES -->
+
+<div class="quick">
+
+<button onclick="quickTime(5)">5 min</button>
+
+<button onclick="quickTime(15)">15 min</button>
+
+<button onclick="quickTime(25)">25 min</button>
+
+<button onclick="quickTime(45)">45 min</button>
+
+<button onclick="quickTime(60)">60 min</button>
+
+</div>
+
+
+<!-- TIP -->
+
+<div class="tip">
+
+💡 Tip: Use the Pomodoro Technique — 25 minutes focus, then a 5 minute break.
+
+</div>
+
+</div>
+
+</div>
+
+<script src="FRONTEND/js/timer.js"></script>
+
+</body>
+
+</html>

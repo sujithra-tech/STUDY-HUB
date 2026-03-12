@@ -1,43 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Study Hub Dashboard</title>
+
 <link rel="stylesheet" href="FRONTEND/css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h2>Dashboard</h2>
+<!-- SIDEBAR -->
 
-<div class="card">
+<div class="sidebar">
 
-<h3>Add Tutorial</h3>
+<h2>STUDY HUB</h2>
 
-<input id="title" placeholder="Tutorial Name">
+<ul>
 
-<input id="link" placeholder="Tutorial URL">
+<li>🏠 Home</li>
+<li class="active">📊 Dashboard</li>
+<li>📅 Schedule</li>
+<li>💻 Practice Here</li>
+<li>⏱ Timer</li>
 
-<button onclick="saveTutorial()">Save Tutorial</button>
+</ul>
+
+<div class="profile">
+👤 priya
+</div>
 
 </div>
 
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<h1>Dashboard</h1>
+<p class="subtitle">Manage your tutorials and notes</p>
+
+
+<div class="progress-box">
+
+<h3>Progress Tracker</h3>
+
+<div class="cards">
+
+<!-- DAY STREAK -->
+
 <div class="card">
 
-<h3>Watch Tutorial</h3>
+<div class="icon">🔥</div>
 
-<iframe id="videoFrame" width="100%" height="300"></iframe>
+<h2 id="streak">1</h2>
+
+<p>Day Streak</p>
 
 </div>
 
+
+<!-- STUDY TIME -->
+
 <div class="card">
 
-<h3>Notes</h3>
+<div class="icon">⏱</div>
 
-<textarea id="notes" rows="10" placeholder="Write your notes here..."></textarea>
+<h2 id="studyTime">0h</h2>
 
-<button onclick="saveNotes()">Save Notes</button>
+<p>Study Time</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- TUTORIAL CARD -->
+
+<div class="large-card">
+
+<div>
+<h3>Tutorials</h3>
+<p>0 items saved</p>
+</div>
+
+<span>➜</span>
+
+</div>
+
+
+<!-- NOTES CARD -->
+
+<div class="large-card">
+
+<div>
+<h3>Note Here</h3>
+<p>0 notes saved</p>
+</div>
+
+<span>➜</span>
+
+</div>
+
 
 </div>
 
@@ -46,4 +119,5 @@
 <script src="FRONTEND/js/dashboard.js"></script>
 
 </body>
+
 </html>

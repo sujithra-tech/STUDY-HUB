@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notepad - Focus Hub</title>
+  <link rel="stylesheet" href="FRONTEND/css/notepad.css">
+</head>
+<body>
+  <div class="notepad-container">
+    <h2>Notepad</h2>
+    <button id="newBtn">New</button>
+    <button id="openBtn">Open</button>
+    <button id="saveBtn">Save</button>
+
+    <textarea id="noteArea" placeholder="Start typing your notes here..."></textarea>
+    <div id="fileList"></div>
+  </div>
+
+  <!-- Modal for new note -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <input type="text" id="fileNameInput" placeholder="Enter file name...">
+      <button id="createBtn">Create</button>
+      <button id="cancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <script src="FRONTEND/js/notepad.js"></script>
+</body>
+</html>

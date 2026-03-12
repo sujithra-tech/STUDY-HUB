@@ -1,12 +1,24 @@
-function startStudy(){
 
-let name = document.getElementById("name").value;
+const button = document.getElementById("startBtn");
+
+button.addEventListener("click", function(){
+
+const name = document.getElementById("username").value;
 
 if(name === ""){
+
 alert("Please enter your name");
-}
-else{
-alert("Welcome " + name + "! Let's start studying.");
-}
+
+return;
 
 }
+
+/* store name */
+
+localStorage.setItem("studyhub_user", name);
+
+/* redirect */
+
+window.location.href = "home.html";
+
+});

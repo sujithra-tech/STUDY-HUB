@@ -1,27 +1,9 @@
-function toggleFocus(){
+const focusBtn = document.querySelector(".focus-btn");
 
-let relax = document.getElementById("relaxCard");
+focusBtn.addEventListener("click", function(){
 
-let button = document.getElementById("focusBtn");
+alert("Focus Mode Enabled!");
 
-if(focusOn){
+document.body.style.background="#f0edff";
 
-relax.style.display="none";
-
-button.innerText="Focus Mode OFF";
-
-focusOn=false;
-
-}
-
-else{
-
-relax.style.display="block";
-
-button.innerText="Focus Mode ON";
-
-focusOn=true;
-
-}
-
-}
+});

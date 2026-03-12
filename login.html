@@ -3,24 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Study Hub</title>
+
+<title>Study Hub Login</title>
+
 <link rel="stylesheet" href="FRONTEND/css/login.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="background">
+
+    <div class="floating-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</div>
+
+<div class="login-container">
 
     <div class="login-card">
 
         <h1>STUDY HUB</h1>
+
         <p class="subtitle">Your personal study companion</p>
 
-        <input type="text" id="name" placeholder="Enter your name">
+        <input 
+        type="text"
+        id="username"
+        placeholder="Enter your name"
+        >
 
-        <button onclick="startStudy()">Start Studying</button>
+        <button id="startBtn">
+            Start Studying
+        </button>
 
-        <p class="small-text">Quick login – no password, no distraction</p>
+        <p class="note">
+        Quick login — no password, no distraction
+        </p>
 
     </div>
 

@@ -2,115 +2,313 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: Arial, Helvetica, sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-
 height:100vh;
+overflow:hidden;
 display:flex;
 justify-content:center;
 align-items:center;
+background:#f7f4ff;
 
-/* soft gradient background */
-
-background: linear-gradient(135deg,#cfc3ff,#f6c8d7);
-
+transition: all 0.6s ease;
 }
 
-/* center container */
+/* BACKGROUND */
 
-.container{
-display:flex;
-justify-content:center;
-align-items:center;
+.background{
+
+position:fixed;
 width:100%;
 height:100%;
+z-index:-1;
+
+background: linear-gradient(
+135deg,
+#c7b9ff 0%,
+#e8c9ff 40%,
+#ffd3e6 100%
+);
+
+animation: gradientMove 12s ease infinite;
+background-size: 200% 200%;
+
 }
 
-/* login card */
+/* SMOOTH GRADIENT ANIMATION */
+
+@keyframes gradientMove {
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* FLOATING SHAPES */
+
+.floating-shapes span{
+
+position:absolute;
+width:120px;
+height:120px;
+
+background:rgba(255,255,255,0.25);
+
+border-radius:20px;
+
+backdrop-filter: blur(10px);
+
+animation: float 10s infinite ease-in-out;
+
+transition: transform 0.6s ease;
+
+}
+
+.floating-shapes span:nth-child(1){
+top:15%;
+left:15%;
+}
+
+.floating-shapes span:nth-child(2){
+top:30%;
+right:20%;
+width:80px;
+height:80px;
+}
+
+.floating-shapes span:nth-child(3){
+bottom:20%;
+left:25%;
+}
+
+.floating-shapes span:nth-child(4){
+bottom:25%;
+right:15%;
+width:100px;
+height:100px;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+0%{
+transform:translateY(0px) rotate(0deg);
+}
+
+50%{
+transform:translateY(-25px) rotate(12deg);
+}
+
+100%{
+transform:translateY(0px) rotate(0deg);
+}
+
+}
+
+/* LOGIN CONTAINER */
+
+.login-container{
+
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+/* CARD */
 
 .login-card{
 
-background:white;
+width:380px;
 padding:40px;
-border-radius:20px;
-text-align:center;
-width:350px;
 
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+background:rgba(255,255,255,0.85);
+
+border-radius:20px;
+
+box-shadow:
+0 10px 40px rgba(0,0,0,0.15);
+
+text-align:center;
+
+backdrop-filter: blur(15px);
+
+animation: cardAppear 0.9s ease;
+
+transition: all 0.4s ease;
 
 }
 
-/* title */
+/* CARD HOVER EFFECT */
+
+.login-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 50px rgba(0,0,0,0.2);
+
+}
+
+/* CARD ENTRANCE ANIMATION */
+
+@keyframes cardAppear{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* TITLE */
 
 .login-card h1{
 
 font-size:32px;
-font-weight:bold;
-margin-bottom:10px;
+font-weight:700;
+color:#2e1a47;
+letter-spacing:2px;
+
+transition: all 0.3s ease;
 
 }
 
-/* subtitle */
+/* SUBTITLE */
 
 .subtitle{
 
-color:#666;
-margin-bottom:25px;
+margin-top:8px;
+margin-bottom:30px;
+
+font-size:15px;
+color:#6a5c85;
+
+opacity:0.9;
 
 }
 
-/* input box */
+/* INPUT */
 
-input{
+.login-card input{
 
 width:100%;
 padding:14px;
 
 border-radius:30px;
-border:2px solid #8f7cff;
+
+border:2px solid #8c6bff;
 
 outline:none;
 
-font-size:16px;
+font-size:15px;
+
+text-align:center;
+
 margin-bottom:20px;
+
+transition: all 0.35s ease;
 
 }
 
-/* button */
+/* INPUT FOCUS EFFECT */
 
-button{
+.login-card input:focus{
+
+border-color:#7b5cff;
+
+box-shadow:0 0 10px rgba(123,92,255,0.35);
+
+transform:scale(1.02);
+
+}
+
+/* BUTTON */
+
+.login-card button{
 
 width:100%;
+
 padding:14px;
 
 border:none;
+
 border-radius:30px;
 
-background:linear-gradient(90deg,#7b61ff,#8f7cff);
+background:linear-gradient(
+90deg,
+#7b5cff,
+#9f6bff
+);
 
 color:white;
+
 font-size:16px;
+font-weight:500;
 
 cursor:pointer;
 
-transition:0.3s;
+transition: all 0.35s ease;
 
 }
 
-button:hover{
+/* BUTTON HOVER */
 
-transform:scale(1.05);
+.login-card button:hover{
+
+transform:translateY(-2px) scale(1.04);
+
+box-shadow:0 10px 25px rgba(123,92,255,0.45);
 
 }
 
-/* bottom text */
+/* BUTTON CLICK */
 
-.small-text{
+.login-card button:active{
+
+transform:scale(0.96);
+
+}
+
+/* NOTE */
+
+.note{
 
 margin-top:15px;
-font-size:14px;
+
+font-size:13px;
+
 color:#777;
+
+opacity:0.8;
+
+transition: opacity 0.3s;
+
+}
+
+.note:hover{
+
+opacity:1;
 
 }
